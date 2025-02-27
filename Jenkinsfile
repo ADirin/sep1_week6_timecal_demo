@@ -8,7 +8,7 @@ pipeline {
       }
     }
 
-    satge (build) {
+    stage ('build') {
       steps{
         bat 'mvn clean install'
       }
