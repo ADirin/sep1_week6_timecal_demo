@@ -1,5 +1,8 @@
 pipeline {
  agent any 
+ tools {
+        maven 'Maven3'   // the name you configured in Global Tools
+    }
   stages {
     stage ('checking'){
       steps {
